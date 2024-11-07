@@ -1,6 +1,6 @@
 
 import { useState } from 'react'
-import './App.css'
+import {appContainer} from "./styles/App.module.css"
 import Card from './components/Card'
 import Form from './components/Form'
 
@@ -15,8 +15,8 @@ function App() {
   
 
   return (
-    <>
-      <div className='App'>
+    
+      <div className={appContainer}>
         
         {show ? 
         <>
@@ -34,7 +34,7 @@ function App() {
         
         
       </div>
-    </>
+    
   )
 }
 

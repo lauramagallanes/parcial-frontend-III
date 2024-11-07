@@ -1,0 +1,16 @@
+.appContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente */
+    align-items: center;     /* Centra horizontalmente */
+    min-height: 100vh;       /* Asegura que el contenedor ocupe al menos el 100% de la altura de la pantalla */
+    font-family: Arial, sans-serif;
+    margin: auto;               /* Elimina márgenes predeterminados */
+    padding: 0;
+}
+
+.appContainer h1 {
+    font-size: 24px;
+    text-align: center;
+}
+

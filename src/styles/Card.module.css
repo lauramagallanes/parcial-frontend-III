@@ -1,0 +1,21 @@
+.cardContainer {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    max-width: 300px;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+}
+
+.cardContainer h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.cardContainer h3 {
+    font-size: 14px;
+    color: #666;
+}
+

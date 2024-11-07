@@ -1,4 +1,5 @@
 import { useState } from "react"
+import {formContainer, errors} from "../styles/Form.module.css"
 
 const Form = ({setShow, setUser, user}) => {
     console.log(setShow);
@@ -24,7 +25,7 @@ const Form = ({setShow, setUser, user}) => {
   return (
     <>
     
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className={formContainer}>
         <label >Ingresa tu nombre de usuario</label>
         <input type="text" value={user.nombre} onChange={(event)=>setUser({...user, nombre:event.target.value})}/>
         <label >Ingresa tu email</label>
@@ -32,7 +33,7 @@ const Form = ({setShow, setUser, user}) => {
         <label >Ingresa tu contraseña</label>
         <input type="text" value={user.password} onChange={(event)=>setUser({...user, password:event.target.value})} />
         <button>Enviar</button>
-        {error ? <h3>Por favor, ingresa datos validos</h3> : ""}
+        {error ? <h3 className={errors}>Por favor chequea que la informacion sea correcta</h3> : ""}
     </form>
     </>
   )

@@ -1,11 +1,11 @@
-
+import {cardContainer} from "../styles/Card.module.css"
 
 const Card = ({user}) => {
   return (
-    <>
-    <h2>Gracias {user.nombre} por registrarte!</h2>
-    <h3>Tu email es {user.email}</h3>
-    </>
+    <div className={cardContainer}>  
+      <h2>Gracias {user.nombre} por registrarte!</h2>
+      <h3>Tu email es {user.email}</h3>
+    </div>
   )
 }
 
